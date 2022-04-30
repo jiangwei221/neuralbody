@@ -1,0 +1,22 @@
+task: 'if_nerf'
+gpus: [0]
+
+parent_cfg: 'configs/snapshot_exp/snapshot_f3c.yaml'
+
+train_dataset:
+    data_root: 'data/people_snapshot/parkinglot'
+    human: 'parkinglot'
+    ann_file: 'data/people_snapshot/parkinglot/params.npy'
+    split: 'train'
+
+test_dataset:
+    data_root: 'data/people_snapshot/parkinglot'
+    human: 'parkinglot'
+    ann_file: 'data/people_snapshot/parkinglot/params.npy'
+    split: 'test'
+
+# data options
+ratio: 1.
+num_train_frame: 42
+H: 722
+W: 1297

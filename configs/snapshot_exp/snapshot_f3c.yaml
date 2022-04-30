@@ -91,7 +91,7 @@ novel_view_cfg:
     visualizer_module: 'lib.visualizers.if_nerf_demo'
     visualizer_path: 'lib/visualizers/if_nerf_demo.py'
 
-    ratio: 0.5
+    ratio: 1.0
 
     test:
         sampler: ''
@@ -108,7 +108,7 @@ novel_pose_cfg:
     visualizer_module: 'lib.visualizers.if_nerf_perform'
     visualizer_path: 'lib/visualizers/if_nerf_perform.py'
 
-    ratio: 0.5
+    ratio: 1.0
 
     test:
         sampler: ''

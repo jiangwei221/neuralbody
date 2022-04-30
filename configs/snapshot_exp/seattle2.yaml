@@ -18,3 +18,5 @@ test_dataset:
 # data options
 ratio: 1.
 num_train_frame: 41
+H: 708
+W: 1259

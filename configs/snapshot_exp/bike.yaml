@@ -1,0 +1,22 @@
+task: 'if_nerf'
+gpus: [0]
+
+parent_cfg: 'configs/snapshot_exp/snapshot_f3c.yaml'
+
+train_dataset:
+    data_root: 'data/people_snapshot/bike'
+    human: 'bike'
+    ann_file: 'data/people_snapshot/bike/params.npy'
+    split: 'train'
+
+test_dataset:
+    data_root: 'data/people_snapshot/bike'
+    human: 'bike'
+    ann_file: 'data/people_snapshot/bike/params.npy'
+    split: 'test'
+
+# data options
+ratio: 1.
+num_train_frame: 104
+H: 711
+W: 1265
